@@ -50,6 +50,7 @@
         <module>faces-services</module>
         <module>discovery-service</module>
         <module>gateway-service</module>
-    </modules>
+		<module>zipkin-service</module>
+	</modules>
 
 </project>
