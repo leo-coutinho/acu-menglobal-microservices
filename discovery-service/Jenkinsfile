@@ -15,7 +15,7 @@ node {
 
         stage('Image') {
             dir ('discovery-service') {
-                def app = docker.build "localhost:5000/discovery-service:${env.version}"
+                def app = sudo docker.build "localhost:5000/discovery-service:${env.version}"
                 app.push()
             }
         }
